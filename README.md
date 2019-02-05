@@ -26,7 +26,7 @@ Based on the work of [coldKnight/TrafficLight_Detection-TensorFlowAPI](https://g
 ### Generate Train and Test Dataset
 1. Download [labeled images](https://drive.google.com/file/d/0B-Eiyn-CUQtxdUZWMkFfQzdObUE/viewusp=sharing) by [coldKnight](https://github.com/coldKnight)
 2. copy `sim_training_data` folder into `data/image_data/`
-3. run `simulation_data.ipynb` in `data/` in order to generate`sim_test.record` and `sim_train.record`.
+3. run `simulation_data.ipynb` in `data/` in order to generate`sim_test.record` and `sim_train.record` or [download](https://drive.google.com/file/d/1EwegXHrIDU5MHA5TxrL8XLoECTfx6DHz/view?usp=sharing) the TFRecord files we used
 
 ### Setup Model for Training
 1. [select a model](https://github.com/tensorflow/models/blob/1f34fcafc1454e0d31ab4a6cc02202a54ac0f5b/research/object_detection/g3doc/detection_model_zoo.md) e.g. `ssd_mobilenet_v1_coco` and unpack it your workspace
