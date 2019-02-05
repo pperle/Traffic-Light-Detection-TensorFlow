@@ -30,8 +30,8 @@ Based on the work of [coldKnight/TrafficLight_Detection-TensorFlowAPI](https://g
 3. run `simulation_data.ipynb` in `data/` in order to generate`sim_test.record` and `sim_train.record` or [download](https://drive.google.com/file/d/1EwegXHrIDU5MHA5TxrL8XLoECTfx6DHz/view) the TFRecord files we used
 
 ### Setup Model for Training
-1. [select a model](https://github.com/tensorflow/models/blob/1f34fcafc1454e0d31ab4a6cc02202a54ac0f5b/research/object_detection/g3doc/detection_model_zoo.md) e.g. `ssd_mobilenet_v1_coco` and unpack it your workspace
-2. download the corresponding [configuration](https://github.com/tensorflow/models/tree/1f34fcafc1454e0d31ab4a6cc02202a54ac0f5b/research/object_detection/samples/configs)
+1. [select a model](https://github.com/tensorflow/models/blob/1f34fcafc1454e0d31ab4a6cc022102a54ac0f5b/research/object_detection/g3doc/detection_model_zoo.md) e.g. `ssd_mobilenet_v1_coco` and unpack it your workspace
+2. download the corresponding [configuration](https://github.com/tensorflow/models/tree/1f34fcafc1454e0d31ab4a6cc022102a54ac0f5b/research/object_detection/samples/configs)
 3. update configuration (these are the settings we chose, trained witha GeForce GTX 1050 Ti ~10h of training)
 ```
 num_classes: 90 => num_classes: 4
