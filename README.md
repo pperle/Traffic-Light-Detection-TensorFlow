@@ -24,7 +24,7 @@ Based on the work of [coldKnight/TrafficLight_Detection-TensorFlowAPI](https://g
 
 ## Simulator
 ### Generate Train and Test Dataset
-1. Download [labeled images(https://drive.google.com/file/d/0B-Eiyn-CUQtxdUZWMkFfQzdObUE/viewusp=sharing) by [coldKnight](https://github.com/coldKnight)
+1. Download [labeled images](https://drive.google.com/file/d/0B-Eiyn-CUQtxdUZWMkFfQzdObUE/viewusp=sharing) by [coldKnight](https://github.com/coldKnight)
 2. copy `sim_training_data` folder into `data/image_data/`
 3. run `simulation_data.ipynb` in `data/` in order to generate`sim_test.record` and `sim_train.record`.
 
