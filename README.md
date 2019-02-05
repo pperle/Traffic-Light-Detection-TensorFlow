@@ -27,7 +27,7 @@ Based on the work of [coldKnight/TrafficLight_Detection-TensorFlowAPI](https://g
 ### Generate Train and Test Dataset
 1. Download [labeled images](https://drive.google.com/file/d/0B-Eiyn-CUQtxdUZWMkFfQzdObUE/view) by [coldKnight](https://github.com/coldKnight)
 2. copy `sim_training_data` folder into `data/image_data/`
-3. run `simulation_data.ipynb` in `data/` in order to generate`sim_test.record` and `sim_train.record` or [download](https://drive.google.com/file/d/1EwegXHrIDU5MHA5TxrL8XLoECTfx6DHz/view the TFRecord files we used
+3. run `simulation_data.ipynb` in `data/` in order to generate`sim_test.record` and `sim_train.record` or [download](https://drive.google.com/file/d/1EwegXHrIDU5MHA5TxrL8XLoECTfx6DHz/view) the TFRecord files we used
 
 ### Setup Model for Training
 1. [select a model](https://github.com/tensorflow/models/blob/1f34fcafc1454e0d31ab4a6cc02202a54ac0f5b/research/object_detection/g3doc/detection_model_zoo.md) e.g. `ssd_mobilenet_v1_coco` and unpack it your workspace
@@ -47,6 +47,18 @@ num_examples: 8000 => num_examples: 974
 ```
 remove `data_augmentation_options` as the dataset has already been augmented and `max_evals: 10` as we want to test on all testdata.
 
+## Real World
+### Generate Train and Test Dataset
+1. Download [labeled images](https://drive.google.com/file/d/0B-Eiyn-CUQtxdUZWMkFfQzdObUE/view) by [coldKnight](https://github.com/coldKnight)
+2. copy `real_training_data` folder into `data/image_data/`
+3. run `real_data.ipynb` in `data/` in order to generate`real_test.record` and `real_train.record` or [download](https://drive.google.com/file/d/19bpPKYVz1_SBLrOroerocux-RI4QAEE8/view) the TFRecord files we used
+
+### Setup Model for Training
+1. reuse configuration from simulator
+2. update `PATH_TO_BE_CONFIGURED` and `num_examples`
+
+
+## Train & Freeze
 ### Train the Model
 1. copy `train.py` and `eval.py` from `object_detection` in the root of you workspace
 2. start training
