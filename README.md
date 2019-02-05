@@ -19,6 +19,7 @@ Based on the work of [coldKnight/TrafficLight_Detection-TensorFlowAPI](https://g
 5. install slim `pip install -e slim/.` and delf `pip install -e delf/.`
 6. copy the `object_detection` folder to your workspace
 7. install some dependencies `pip install matplotlib==3.0.2 Pillow==5.4.1`
+8. and some more if you want to run the notebook to generate TFRecord files `pip install jupyter==1.0.0 PyYAML==3.13 cython=0.29.4 opencv-python==4.0.0.21`, running `pip install imgaug==0.2.7` might fail on windows, so you need to run `conda install shapely=1.6.4` first
 
 
 
@@ -44,7 +45,7 @@ fine_tune_checkpoint: "PATH_TO_BE_CONFIGURED/model.ckpt" =>fine_tune_checkpoint:
 PATH_TO_BE_CONFIGURED => data
 num_examples: 8000 => num_examples: 974
 ```
-remove `data_augmentation_options` as the dataset has already beenaugmented and `max_evals: 10` as we want to test on all testdata.
+remove `data_augmentation_options` as the dataset has already been augmented and `max_evals: 10` as we want to test on all testdata.
 
 ### Train the Model
 1. copy `train.py` and `eval.py` from `object_detection` in the root of you workspace
