@@ -19,15 +19,15 @@ Based on the work of [coldKnight/TrafficLight_Detection-TensorFlowAPI](https://g
 5. install slim `pip install -e slim/.` and delf `pip install -e delf/.`
 6. copy the `object_detection` folder to your workspace
 7. install some dependencies `pip install matplotlib==3.0.2 Pillow==5.4.1`
-8. and some more if you want to run the notebook to generate TFRecord files `pip install jupyter==1.0.0 PyYAML==3.13 cython=0.29.4 opencv-python==4.0.0.21`, running `pip install imgaug==0.2.7` might fail on windows, so you need to run `conda install shapely=1.6.4` first
+8. and some more if you want to run the notebook to generate TFRecord files `pip install jupyter==1.0.0 PyYAML==3.13 cython=0.29.4 opencv-python==4.0.0.21 tqdm==4.30.0`, running `pip install imgaug==0.2.7` might fail on windows, so you need to run `conda install shapely=1.6.4` first
 
 
 
 ## Simulator
 ### Generate Train and Test Dataset
-1. Download [labeled images](https://drive.google.com/file/d/0B-Eiyn-CUQtxdUZWMkFfQzdObUE/viewusp=sharing) by [coldKnight](https://github.com/coldKnight)
+1. Download [labeled images](https://drive.google.com/file/d/0B-Eiyn-CUQtxdUZWMkFfQzdObUE/view) by [coldKnight](https://github.com/coldKnight)
 2. copy `sim_training_data` folder into `data/image_data/`
-3. run `simulation_data.ipynb` in `data/` in order to generate`sim_test.record` and `sim_train.record` or [download](https://drive.google.com/file/d/1EwegXHrIDU5MHA5TxrL8XLoECTfx6DHz/view?usp=sharing) the TFRecord files we used
+3. run `simulation_data.ipynb` in `data/` in order to generate`sim_test.record` and `sim_train.record` or [download](https://drive.google.com/file/d/1EwegXHrIDU5MHA5TxrL8XLoECTfx6DHz/view the TFRecord files we used
 
 ### Setup Model for Training
 1. [select a model](https://github.com/tensorflow/models/blob/1f34fcafc1454e0d31ab4a6cc02202a54ac0f5b/research/object_detection/g3doc/detection_model_zoo.md) e.g. `ssd_mobilenet_v1_coco` and unpack it your workspace
