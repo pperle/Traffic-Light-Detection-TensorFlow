@@ -60,7 +60,7 @@ remove `data_augmentation_options` as the dataset has already been augmented and
 
 ## Train & Freeze
 ### Train the Model
-1. copy `train.py` and `eval.py` from `object_detection` in the root of you workspace
+1. copy `train.py` and `eval.py` from `models/research/object_detection` in the root of you workspace
 2. start training
     ```
     python train.py --logtostderr --train_dir=./trained_models --pipeline_config_path=ssd_mobilenet_v1_coco.config
